@@ -16,16 +16,20 @@ A simple calculator built using React Native that mimics the design of the defau
 
 ### Dark mode (default)
 
-Basic mode
-![Basic mode](assets/demo/dark-basic.png)
+Basic
 
-Scientific mode
-![Scientific mode](assets/demo/dark-sci.png)
+![Basic mode](assets/demo/dark-basic.PNG)
+
+Scientific
+
+![Scientific mode](assets/demo/dark-sci.PNG)
 
 ### Light Mode
 
-Basic mode
-![Basic mode](assets/demo/light-basic.png)
+Basic
 
-Scientific mode
-![Scientific mode](assets/demo/light-sci.png)
+![Basic mode](assets/demo/light-basic.PNG)
+
+Scientific
+
+![Scientific mode](assets/demo/light-sci.PNG)
