@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import {
   View,
@@ -21,20 +21,9 @@ export default function App() {
 
   const [equationValue, setEquationValue] = useState('');
   const [resetEquation, setResetEquation] = useState(false);
-  const [resultFontSize, setResultFontSize] = useState(70);
   const [darkModeEnabled, setDarkModeEnabled] = useState(true);
   const [isScienceMode, setIsScienceMode] = useState(false);
   const [clearButtonText, setClearButtonText] = useState('AC');
-
-  // re-calculates result fontsize when 'answerValue' is changed
-  useEffect(() => {
-    const maxResultLen = screenWidth / (resultFontSize * 0.6);
-
-    if (answerValue.toString.length > maxResultLen) {
-      const newFontSize = screenWidth / (answerValue.toString.length + 1);
-      setResultFontSize(newFontSize);
-    }
-  }, [answerValue, resultFontSize]);
 
   // update state when respective switch is toggled
   const toggleColorMode = () => setDarkModeEnabled(!darkModeEnabled);
@@ -56,7 +45,6 @@ export default function App() {
       setReadyToReplace(true);
       setEquationValue('');
       setResetEquation(false);
-      setResultFontSize(70);
       setClearButtonText('AC');
     }
     if (['+', '-', 'x', '/', '^2', 'ln', 'log', 'π'].includes(value)) {
@@ -228,7 +216,7 @@ export default function App() {
           numberOfLines={2}
           style={[
             styles.resultText,
-            { color: resultColor, fontSize: resultFontSize },
+            { color: resultColor, },
           ]}>
           {answerValue}
         </Text>
@@ -312,6 +300,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     margin: '5%',
     textAlign: 'right',
+    fontSize: 70,
   },
   row: {
     flexDirection: 'row',
