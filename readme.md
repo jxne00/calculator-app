@@ -18,18 +18,18 @@ A simple calculator built using React Native that mimics the design of the defau
 
 Basic
 
-![Basic mode](assets/demo/dark-basic.PNG)
+<img src="https://github.com/jxne00/calculator-react-native/blob/main/assets/demo/dark-basic.PNG" alt="dark mode basic" width="350">
 
 Scientific
 
-![Scientific mode](assets/demo/dark-sci.PNG)
+<img src="https://github.com/jxne00/calculator-react-native/blob/main/assets/demo/dark-sci.PNG" alt="dark mode scientific" width="350">
 
 ### Light Mode
 
 Basic
 
-![Basic mode](assets/demo/light-basic.PNG)
+<img src="https://github.com/jxne00/calculator-react-native/blob/main/assets/demo/light-basic.PNG" alt="light mode basic" width="350">
 
 Scientific
 
-![Scientific mode](assets/demo/light-sci.PNG)
+<img src="https://github.com/jxne00/calculator-react-native/blob/main/assets/demo/light-sci.PNG" alt="light mode scientific" width="350">
